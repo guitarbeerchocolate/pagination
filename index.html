@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagination</title>    
+    <style>
+    body
+    {
+      font: 90%/1.618 sans-serif;
+      padding-top:2em;
+    }
+    #mickspagination
+    {
+      margin:0 auto;
+      width:40em;
+    }
+    #mickspagination #navigation
+    {
+      margin-top:2em;
+    }
+    #mickspagination #navigation a
+    {
+      background:#e5e5e5;
+      margin:0.1em;
+      padding:0.5em;
+    }
+    @media (max-width:1000px)
+    {
+      #mickspagination #navigation a
+      {
+        display:block;
+        width:100%;
+      }      
+    }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="mickspagination">
+      <div id="content">
+        <div id="home page" class="active">
+          <h2>1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Nam bonum ex quo appellatum sit, nescio, praepositum ex eo credo, quod praeponatur aliis. Quod quidem iam fit etiam in Academia. Quamvis enim depravatae non sint, pravae tamen esse possunt. Duo Reges: constructio interrete. Animum autem reliquis rebus ita perfecit, ut corpus; Ut proverbia non nulla veriora sint quam vestra dogmata. Itaque hic ipse iam pridem est reiectus; Dolere malum est: in crucem qui agitur, beatus esse non potest. Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum.</p>
+          <p>Illi enim inter se dissentiunt. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti?</p>
+          <p>Iam enim adesse poterit. Omnis enim est natura diligens sui. Quis contra in illa aetate pudorem, constantiam, etiamsi sua nihil intersit, non tamen diligat? An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Paria sunt igitur. Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Nam, ut sint illa vendibiliora, haec uberiora certe sunt.</p>
+        </div>
+        <div id="about us">
+          <h2>2</h2>
+          <img src="http://lorempixel.com/400/200/sports" alt="sports" class="media-object img-responsive" />
+          <p>Iam enim adesse poterit. Omnis enim est natura diligens sui. Quis contra in illa aetate pudorem, constantiam, etiamsi sua nihil intersit, non tamen diligat? An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Paria sunt igitur. Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Nam, ut sint illa vendibiliora, haec uberiora certe sunt.</p>
+        </div>
+        <div id="contact for help">
+          <h2>3</h2>
+          <p>Illi enim inter se dissentiunt. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti?</p>
+        </div>
+        <div id="something else">
+          <h2>4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Nam bonum ex quo appellatum sit, nescio, praepositum ex eo credo, quod praeponatur aliis. Quod quidem iam fit etiam in Academia. Quamvis enim depravatae non sint, pravae tamen esse possunt. Duo Reges: constructio interrete. Animum autem reliquis rebus ita perfecit, ut corpus; Ut proverbia non nulla veriora sint quam vestra dogmata. Itaque hic ipse iam pridem est reiectus; Dolere malum est: in crucem qui agitur, beatus esse non potest. Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum.</p>
+        </div>
+      </div><!-- content -->
+      <div id="navigation"></div>
+    </div><!-- mickspagination -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="pagination.plugin.js"></script>
+    <script>
+    (function()
+    {
+      $('#mickspagination').pagination(
+      {
+        showarrows:true,
+        classesext:null,
+        alignment:'center'                
+      });
+    })();
+    </script>
+  </body>
+</html>
